@@ -1,0 +1,490 @@
+/* -- Custom Styler -- */
+/**************************************
+* red: #D70000;
+* black: black;
+* white: white;
+**************************************/
+/* -- Foundation Reset -- */
+body {
+    color: #000000;
+}
+
+@font-face {
+    font-family: BEBAS;
+    src: url('BEBAS.TTF');
+}
+
+.bebas {
+    font-family: BEBAS;
+    letter-spacing: 2px;
+}
+
+p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+
+
+/* -- PADDING & MARGIN RESETS -- */
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.padding-left-5 {
+    padding-left: 5px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+/* -- Foundation Reset Nav -- */
+.contain-to-grid .top-bar {
+    margin-bottom: 0px;
+}
+
+.contain-to-grid {
+    background: #000000;
+}
+
+.top-bar.expanded .title-area {
+    background: #000000;
+}
+
+.top-bar-section ul {
+    background: #000000;
+}
+
+.top-bar {
+    margin-bottom: 0px;
+    background-color: #000000;
+}
+
+.top-bar-section ul li > a {
+    background: #D70000;
+    color: #ffffff;
+}
+
+.top-bar-section ul li.hover > a {
+    background: #F70000;
+    color: #ffffff;
+}
+
+.top-bar-section ul li.active > a {
+    background: #A70000;
+    color: #FFFFFF;
+}
+
+.large-only {
+    visibility: hidden;
+    display: none;
+}
+
+.small-only {
+    visibility: visible;
+    display: block;
+}
+
+
+
+/* -- BARS -- */
+.dynamic-div img {
+    vertical-align: top;
+}
+
+
+/* -- Rotated Text -- */
+.vtext {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    /*writing-mode: lr-tb;
+    float: left;
+    position: relative;
+    width: 50px;
+    top: 300px;
+    border-style: none;
+    font-size: 20px;*/
+}
+
+.center {
+    text-align: center !important;
+}
+
+div {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.maxWidth {
+    width: 100%;
+}
+
+.training {
+}
+
+    .training p {
+        font-size: 37px;
+        padding: 0px;
+        padding-left:5px;
+        overflow:hidden;
+    }
+
+.trainingInfo p {
+    font-size: 23.4px;
+    padding: 0px;
+    color: black;
+    overflow: hidden;
+}
+
+.date {
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.day {
+    font-size: 27px;
+    line-height: 100%;
+    padding-top: 0px;
+    margin-bottom: 5px;
+}
+
+.hour {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pleft {
+    text-align: left;
+    float: left;
+}
+
+.pright {
+    text-align: right;
+    float: right;
+}
+
+.custom {
+    padding-top: 10px;
+}
+
+a {
+    color: #D70000;
+    text-decoration: none;
+}
+
+.icon-time {
+    font-size: 20px;
+}
+
+a:hover {
+    color: #D70000;
+    text-decoration: none;
+}
+
+/*carousel*/
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+        .rslides li:first-child {
+            position: relative;
+            display: block;
+            float: left;
+        }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+
+/* -- FOOTER -- */
+.footer {
+    background-color: #000000;
+    font-weight: normal;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+    .footer a {
+        color: #D70000;
+    }
+
+    .footer p {
+        color: white;
+    }
+
+    .footer .contact p {
+        padding-right: 0px;
+    }
+
+.footer-header {
+    background: #d70000;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+    .footer-header .icon-envelope, .footer-header .icon-group, .footer-header .icon-globe, .footer-header .icon-external-link {
+        padding-left: 10px;
+    }
+
+.footer .icon-youtube-sign, .footer .icon-facebook-sign {
+    padding-left: 10px;
+}
+
+.footer ul {
+    padding-top: 10px;
+}
+
+    .footer ul li {
+        list-style-type: none;
+    }
+
+        .footer ul li a {
+            font-size: 14px;
+        }
+
+.red {
+    background-color: #D70000;
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+/* -- button with icon -- */
+button, .button {
+    -webkit-transition: background-color 0ms ease-out;
+    -moz-transition: background-color 0ms ease-out;
+    transition: background-color 0ms ease-out;
+}
+
+a.button.fb-button {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    padding: 5px 15px;
+    text-decoration: none;
+    width: 153px;
+    margin: 0 auto;
+    display: block;
+    /*color: #097CC1; fb-icon blue*/
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #D70000;
+    color: white;
+}
+
+    a button.fb-button:hover, a button.fb-button:focus, a.button.fb-button:hover, a.button.fb-button:focus {
+        background-color: #A70000;
+        color: white;
+        display: block;
+    }
+
+a.button.icon.fb-button {
+    padding-left: 11px;
+}
+
+    a.button.icon.fb-button span {
+        padding-left: 33px;
+        left: 11px;
+        position: relative;
+        background: url(../img/f-icon.png) no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+/* -- SHOP -- */
+.shop-etalage img {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    margin-bottom: 20px;
+}
+
+    .caption, .caption p, .orderform, .orderform p {
+        font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 16px;
+    }
+
+        .caption .name, .orderform .title {
+            background-color: black;
+            color: white;
+            height: 26px;
+        }
+
+        .orderform .title {
+            height: auto;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 100%;
+            padding-top: 0px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .orderform .button {
+            background: #d70000;
+            border-color: #d70000;
+            -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.5) inset;
+            box-shadow: 0 0px 0 rgba(255, 255, 255, 0.5) inset;
+        }
+
+            .orderform .button:hover {
+                background: #f70000;
+                border-color: #f70000;
+            }
+
+        .orderform .subtitle {
+            font-size: 14px;
+            padding-left: 0px;
+            font-weight: normal;
+        }
+
+        .orderform span.prefix {
+            background: #000000;
+            border-color: #000000;
+            border-right: none;
+            color: #fff;
+        }
+
+        .caption .name span {
+            padding-left: 25px;
+            font-size: 10px;
+            color: #D70000;
+        }
+
+        .caption .price {
+            color: #D70000;
+            background-color: black;
+            text-align: center;
+            height: 26px;
+        }
+
+        .caption .tshirt-size p {
+            padding-left: 0px;
+        }
+
+        .caption .available {
+            background-color: #35aa47;
+            text-align: center;
+            color: white;
+        }
+
+            .caption .available span {
+                background: url('../img/icon-check.png') no-repeat green;
+                width: 36px;
+                height: 36px;
+            }
+
+.icon-facebook-sign {
+    padding-left: 15px;
+}
+
+
+@media only screen and (min-width: 58.75em) {
+    .top-bar {
+        background: #FFFFFF;
+    }
+
+        .top-bar.expanded {
+            background: #FFFFFF;
+        }
+
+    .top-bar-section li a:not(.button) {
+        color: #ffffff;
+        background: #d70000;
+    }
+
+    .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+        border-right: solid 1px #2b2b2b;
+        border-left: solid 1px black;
+    }
+
+    .no-js .top-bar-section ul li:hover > a {
+        background: #FFFFFF;
+        color: #000000;
+    }
+
+    .no-js .top-bar-section ul li:active > a {
+        background: #FFFFFF;
+        color: #000000;
+    }
+
+    .large-only {
+        visibility: visible;
+        display: block;
+    }
+
+    .small-only {
+        visibility: hidden;
+        display: none;
+    }
+
+    .orderform .title {
+        text-align: left;
+    }
+
+    .contain-to-grid .top-bar {
+        margin-bottom: 0px;
+    }
+
+    .trainingInfo p {
+        font-size: 30.4px;
+        height: 59px;
+        padding-top: 6px;
+        padding-right:5px;
+    }
+
+    .day {
+        font-size: 40px;
+    }
+
+    .training p {
+        font-size:37px;
+    }
+}
