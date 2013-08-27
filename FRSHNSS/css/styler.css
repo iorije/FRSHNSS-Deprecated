@@ -334,6 +334,10 @@ a.button.icon.fb-button {
     }
 
 /* -- SHOP -- */
+.redtext {
+    color: #D70000;
+    font-weight:bold;
+}
 .shop-etalage img {
     margin-top: 5px;
     margin-bottom: 10px;
