@@ -87,97 +87,125 @@
     <!--end nav-->
     <!--content-->
     <!--small only-->
-    <div class="row margin-top-25 shop">
-        <div class="small-12 large-5 columns no-padding shop-etalage">
-            <p>tshirts</p>
-            <!-- article -->
-            <img src="img/t-shirt.png" alt="t-shirt" />
-            <div class="small-12 caption">
-                <div class="row collapse">
-                    <div class="small-10 columns no-padding name">
-                        <p>NAME<span>BY: ARIE</span></p>
-                    </div>
-                    <div class="small-2 columns no-padding price">
-                        <p>€10</p>
-                    </div>
-                </div>
-                <div class="row collapse">
-                    <div class="small-8 columns no-padding tshirt-size">
-                        <p>M - L - XL</p>
-                    </div>
-                    <div class="small-4 columns no-padding available">
-                        <p>AVAILABLE</p>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- article -->
-            <img src="img/t-shirt.png" alt="t-shirt" />
-            <div class="small-12 caption">
-                <div class="row collapse">
-                    <div class="small-10 columns no-padding name">
-                        <p>HIPHOPCOMMUNITY<span>BY: ARIE</span></p>
-                    </div>
-                    <div class="small-2 columns no-padding price">
-                        <p>€15</p>
-                    </div>
-                </div>
-                <div class="row collapse">
-                    <div class="small-8 columns no-padding tshirt-size">
-                        <p>S - M - L - XL - XXL</p>
-                    </div>
-                    <div class="small-4 columns no-padding available">
-                        <p>AVAILABLE</p>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
+    <form class="orderform custom" method="POST" action="php/mailer.php" onsubmit="return validateForm();">
+        <div class="row">
+            <p class="title">SHOPSHOPSHOPSHOPSHOPSHOPSHOPSHOPSHOPSHOPSHOP</p>
         </div>
-        <div class="large-1 columns no-padding collapse large-only">
-        </div>
-        <div class="small-12 large-6 columns no-padding">
-            <form class="orderform">
-                <p class="title">Order your shirt here</p>
-                <p class="subtitle redtext">LET OP: DE SHOP SLUIT OP 1/10/2013. NA DEZE DEADLINE BESTELLEN WE ALLES TESAMEN.<br />
-                    LET NOG EENS OP: BIJ ELKE BESTELLING ZIT EEN SUPRISE.<br />
+        <div class="row">
+            <div class="small-12 large-6 columns no-padding shop-etalage">
+                <!--<p>tshirts</p>-->
+                <!-- article -->
+                <img src="img/t-shirt.png" alt="t-shirt" />
+                <div class="small-12 caption">
+                    <div class="row collapse">
+                        <div class="small-10 columns no-padding name">
+                            <p>HIPHOPCOMMUNITY<span>BY: ARIE</span></p>
+                        </div>
+                        <div class="small-2 columns no-padding price">
+                            <p>€10</p>
+                        </div>
+                    </div>
+                    <div class="row collapse">
+                        <div class="small-12 large-6 columns no-padding tshirt-size">
+                            <div class="row collapse">
+                                <div class="small-4 columns">
+                                    <span class="prefix">MAAT</span>
+                                </div>
+                                <div class="small-8 columns">
+                                    <select id="size1" class="medium">
+                                        <option disabled selected>Kies uw maat</option>
+                                        <option>S</optio>
+                                        <option>M</option>
+                                        <option>L</option>
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row collapse error-message hidden-field" id="sizeError1">
+                                <small class="error drop">Invalid entry</small>
+                            </div>
+                        </div>
+                        <div class="small-12 large-6 columns no-padding">
+                            <div class="row collapse">
+                                <div class="small-6 columns">
+                                    <span class="prefix">AANTAL</span>
+                                </div>
+                                <div class="small-6 columns">
+                                    <input type="text" placeholder="AANTAL" id="count1">
+                                </div>
+                            </div>
+                            <div class="row collapse error-message hidden-field" id="countError1">
+                                <small class="error">Invalid entry</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end article-->
+            </div>
+            <div class="large-1 columns no-padding collapse large-only">
+            </div>
+            <div class="small-12 large-5 columns no-padding">
+                <p class="title">LET OP!</p>
+                <p class="subtitle redtext">
+                    LET OP: DE SHOP SLUIT OP 1/10/2013. NA DEZE DEADLINE BESTELLEN WE ALLES TESAMEN.<br />
+                    LET NOG EENS OP: BETALINGENINFO.<br />
                     GRTZ VANUIT HIP HOP LAND
                 </p>
                 <div class="row collapse">
-                    <div class="small-3 large-2 columns">
-                        <span class="prefix">Naam</span>
+                    <div class="row collapse">
+                        <div class="small-3 large-2 columns">
+                            <span class="prefix">Naam</span>
+                        </div>
+                        <div class="small-9 large-10 columns">
+                            <input type="text" placeholder="Geef je achternaam in..." id="name">
+                        </div>
                     </div>
-                    <div class="small-9 large-10 columns">
-                        <input type="text" placeholder="Geef je achternaam in...">
-                    </div>
-                </div>
-                <div class="row collapse">
-                    <div class="small-3 large-2 columns">
-                        <span class="prefix">Vooraam</span>
-                    </div>
-                    <div class="small-9 large-10 columns">
-                        <input type="text" placeholder="Geef je voornaam in...">
+
+                    <div class="row collapse error-message hidden-field" id="nameError">
+                        <small class="error">Invalid entry</small>
                     </div>
                 </div>
                 <div class="row collapse">
-                    <div class="small-3 large-2 columns">
-                        <span class="prefix">Email</span>
+                    <div class="row collapse">
+                        <div class="small-3 large-2 columns">
+                            <span class="prefix">Vooraam</span>
+                        </div>
+                        <div class="small-9 large-10 columns">
+                            <input type="text" placeholder="Geef je voornaam in..." id="firstName">
+                        </div>
                     </div>
-                    <div class="small-9 large-10 columns">
-                        <input type="text" placeholder="Geef je email-adres in...">
+
+                    <div class="row collapse error-message hidden-field" id="firstNameError">
+                        <small class="error">Invalid entry</small>
+                    </div>
+                </div>
+                <div class="row collapse">
+                    <div class="row collapse">
+                        <div class="small-3 large-2 columns">
+                            <span class="prefix">Email</span>
+                        </div>
+                        <div class="small-9 large-10 columns">
+                            <input type="text" placeholder="Geef je email-adres in..." id="email">
+                        </div>
+                    </div>
+
+                    <div class="row collapse error-message hidden-field" id="emailError">
+                        <small class="error">Invalid entry</small>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="large-12 columns">
-                        <label>Opmerkingen</label>
-                        <textarea placeholder="Hier kan je opmerkingen kwijt..."></textarea>
+                        <label class="prefix" style="background-color: black; margin-bottom: 0px; color: white; font-size: 15px; font-weight: bold;">Opmerkingen</label>
+                        <textarea placeholder="Hier kan je opmerkingen kwijt..." id="remarks"></textarea>
                     </div>
                 </div>
-                <a href="#" class="small button">Small Button</a>
-            </form>
+                <input type="submit" value="Bestel" />
+                <!--<a href="#" class="small button" id="submit">Bestel</a>-->
+            </div>
         </div>
-    </div>
+    </form>
     <!--end large only-->
     <!--end content-->
     <!--footer-->
@@ -248,6 +276,7 @@
     <!--Responsive slides-->
     <script src="js/responsiveslides.min.js"></script>
     <!-- Scripter -->
-    <script src="js/scripter.js"></script>
+    <script src="js/FRSHNSS.scripter.js"></script>
+    <script src="js/FRSHNSS.shop.js"></script>
 </body>
 </html>

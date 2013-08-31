@@ -65,7 +65,6 @@
     <Content Include="css\styler.css" />
     <Content Include="favicon.ico" />
     <Content Include="img\bar.png" />
-    <Content Include="img\f-icon.png" />
     <Content Include="img\frshnss.png" />
     <Content Include="img\icon-check.png" />
     <Content Include="img\icon-not-check.png" />
@@ -90,8 +89,9 @@
     <Content Include="js\foundation\foundation.section.js" />
     <Content Include="js\foundation\foundation.tooltips.js" />
     <Content Include="js\foundation\foundation.topbar.js" />
+    <Content Include="js\FRSHNSS.shop.js" />
     <Content Include="js\responsiveslides.min.js" />
-    <Content Include="js\scripter.js" />
+    <Content Include="js\FRSHNSS.scripter.js" />
     <Content Include="js\vendor\custom.modernizr.js" />
     <Content Include="js\vendor\jquery.js" />
     <Content Include="js\vendor\zepto.js" />
