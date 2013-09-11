@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calendar.html" />
     <Content Include="css\libs\font-awesome.min.css" />
     <Content Include="css\libs\font\fontawesome-webfont.svg" />
     <Content Include="css\libs\foundation.css" />
