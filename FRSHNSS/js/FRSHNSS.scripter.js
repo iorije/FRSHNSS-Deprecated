@@ -11,9 +11,19 @@
         var newValue = 99 + ((width - 53) * (-54 / 114));
         $('.training p').css('margin-top', newValue);
     };
+    
+    //conditionaly loading
+    function LoadImages() {
+        if ($(this).width() <= 768) {
+            //load image for small only
+        } else {
+            $('.large-image').each(function() {
+                this.src = $(this).data('src');
+            });
+        }
+    }
 
     $(document).ready(function () {
-
         //browser specifics
         var FF = !(window.mozInnerScreenX == null);
         var IE = /*@cc_on!@*/false;
@@ -54,6 +64,8 @@
                 SetDivHeight($(this), 0);
             });
         }
+
+        LoadImages();
     });
 
     $(window).resize(function () {
@@ -91,6 +103,7 @@
                 SetDivHeight($(this), 0);
             });
         }
+        LoadImages();
     });
 
     //carousel
