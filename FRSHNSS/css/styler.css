@@ -14,6 +14,11 @@ body {
     src: url('BEBAS.TTF');
 }
 
+@font-face {
+    font-family: opensans;
+    src: url('OpenSans-CondBold.ttf');
+}
+
 .bebas {
     font-family: BEBAS;
     letter-spacing: 2px;
@@ -443,6 +448,70 @@ form.custom .custom.dropdown {
 .icon-facebook-sign {
     padding-left: 15px;
 }
+
+
+/*kalender*/
+.event{
+    float: left;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    width: 50%;
+    font-family: opensans;
+}
+.small{
+    font-size: 11px;
+    font-family: opensans;
+}
+.big{
+    font-size: 33px;
+    font-family: opensans;
+}
+
+
+
+        .frsh-btn {
+            -moz-box-shadow:inset 0px 0px 24px -7px #000000;
+            -webkit-box-shadow:inset 0px 0px 24px -7px #000000;
+            box-shadow:inset 0px 0px 24px -7px #000000;
+            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #c62d1f) );
+            background:-moz-linear-gradient( center top, #c62d1f 5%, #c62d1f 100% );
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#c62d1f');
+            background-color:#c62d1f;
+            -webkit-border-top-left-radius:5px;
+            -moz-border-radius-topleft:5px;
+            border-top-left-radius:5px;
+            -webkit-border-top-right-radius:5px;
+            -moz-border-radius-topright:5px;
+            border-top-right-radius:5px;
+            -webkit-border-bottom-right-radius:5px;
+            -moz-border-radius-bottomright:5px;
+            border-bottom-right-radius:5px;
+            -webkit-border-bottom-left-radius:5px;
+            -moz-border-radius-bottomleft:5px;
+            border-bottom-left-radius:5px;
+            text-indent:0;
+            border:1px solid #d02718;
+            display:inline-block;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            font-style:normal;
+            height:35px;
+            line-height:35px;
+            width:100px;
+            text-decoration:none;
+            text-align:center;
+        }
+        .frsh-btn:hover {
+            -moz-box-shadow:inset 0px 0px 24px -7px #666;
+            -webkit-box-shadow:inset 0px 0px 24px -7px #666;
+            box-shadow:inset 0px 0px 24px -7px #666;
+        }.frsh-btn:active {
+            position:relative;
+            top:1px;
+        }
 
 
 @media only screen and (min-width: 58.75em) {
